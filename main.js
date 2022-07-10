@@ -3,10 +3,10 @@ console.clear();
 http.__okhttp__.setTimeout(10000);
 
 let url = [
-    'https://sp.sec-an.cn/storage01/xxqg/UI.js',
-    'https://ghproxy.com/https://raw.githubusercontent.com/sec-an/Better-Auto-XXQG/main/UI',
-    'https://cdn.jsdelivr.net/gh/sec-an/Better-Auto-XXQG@main/UI',
-    'https://raw.githubusercontent.com/sec-an/Better-Auto-XXQG/main/UI',
+    //'https://sp.sec-an.cn/storage01/xxqg/UI.js',
+    'https://ghproxy.com/https://raw.githubusercontent.com/xuex/edit/main/main/UI',
+    'https://cdn.jsdelivr.net/gh/xuex/edit/main@main/UI',
+    'https://raw.githubusercontent.com/xuex/edit/main/main/UI',
 ];
 
 for (var i = 0; i < url.length; i++) {
