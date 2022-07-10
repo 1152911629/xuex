@@ -14,7 +14,7 @@ ui.layout(
     <drawer id="drawer">
         <vertical>
             <appbar>
-                <toolbar id="toolbar" bg="#ff4fb3ff" title="{{decodeURI('%E5%BC%BA%E5%9B%BD%E5%8A%A9%E6%89%8B')}}"/>
+                <toolbar id="toolbar" bg="#ff4fb3ff" title="{{decodeURI('U学习5.0')}}"/>
                 <tabs id="tabs" bg="#ff4fb3ff"/>
             </appbar>
             <viewpager id="viewpager">
@@ -284,21 +284,21 @@ var thread = null;
 Initialize();
 
 // 版本更新检查
-var apkurl = "https://sp.sec-an.cn/storage01/xxqg/v2.0.3.apk";
-var latest_version = "2.0.3";
-if (CONFIG.get("NO_UPDATE", 0) && (app.versionName != latest_version)) {
-    ui.update.visibility = 0;
-    ui.update.setText("点击更新至最新版v" + latest_version);
-} else if (app.versionName != latest_version) {
-    checkversion();
-}
+//var apkurl = "https://sp.sec-an.cn/storage01/xxqg/v2.0.3.apk";
+//var latest_version = "2.0.3";
+//if (CONFIG.get("NO_UPDATE", 0) && (app.versionName != latest_version)) {
+    //ui.update.visibility = 0;
+    //ui.update.setText("点击更新至最新版v" + latest_version);
+//} else if (app.versionName != latest_version) {
+    //checkversion();
+//}
 
 
 //创建选项菜单(右上角)
 ui.emitter.on("create_options_menu", menu=>{
     menu.add("日志");
-    menu.add("关于");
-    menu.add("Github");
+    //menu.add("关于");
+    //menu.add("Github");
 });
 //监听选项菜单点击
 ui.emitter.on("options_item_selected", (e, item)=>{
@@ -306,12 +306,12 @@ ui.emitter.on("options_item_selected", (e, item)=>{
         case "日志":
             app.startActivity("console");
             break;
-        case "关于":
-            alert("关于", decodeURI("%E5%BC%BA%E5%9B%BD%E5%8A%A9%E6%89%8B%20v")+latest_version);
-            break;
-        case "Github":
-            app.openUrl("https://github.com/sec-an/Better-Auto-XXQG");
-            break;
+       // case "关于":
+           // alert("关于", decodeURI("%E5%BC%BA%E5%9B%BD%E5%8A%A9%E6%89%8B%20v")+latest_version);
+          // break;
+        //case "Github":
+          //  app.openUrl("https://github.com/sec-an/Better-Auto-XXQG");
+           // break;
     }
     e.consumed = true;
 });
@@ -373,10 +373,10 @@ ui.start.click(function () {
     }
     threads.start(function () {
         let url = [
-            'https://sp.sec-an.cn/storage01/xxqg/study.js',
-            'https://ghproxy.com/https://raw.githubusercontent.com/sec-an/Better-Auto-XXQG/main/study',
-            'https://cdn.jsdelivr.net/gh/sec-an/Better-Auto-XXQG@main/study',
-            'https://raw.githubusercontent.com/sec-an/Better-Auto-XXQG/main/study'
+           // 'https://sp.sec-an.cn/storage01/xxqg/study.js',
+            'https://ghproxy.com/https://raw.githubusercontent.com/1152911629/xuex/main/study',
+            'https://cdn.jsdelivr.net/gh/1152911629/xuex@main/study',
+            'https://raw.githubusercontent.com/1152911629/xuex/main/study'
         ];
         for (var i = 0; i < url.length; i++) {
             try {
