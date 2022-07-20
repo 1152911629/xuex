@@ -107,8 +107,8 @@ var noverify_thread = noverify();
 var CONFIG = storages.create("CONFIG");
 var BAIDUAPI = storages.create("BAIDUAPI");
 
-var url = 'https://sp.sec-an.cn/storage01/xxqg/QuestionBank.db';
-var path = '/sdcard/QuestionBank.db';
+var url = 'https://ghproxy.com/https://raw.githubusercontent.com/1152911629/xuex/main/QuestionBank';
+var path = '/sdcard/QuestionBank';
 device.wakeUpIfNeeded(); //点亮屏幕
 var first = true; //记录答题的第一次
 var r; // 替换用；
@@ -136,7 +136,7 @@ var ttt;
 var question_list = [];
 var init_true = false;
 var downloadDialog = null;
-var init_url = 'https://sp.sec-an.cn/storage01/xxqg/question';
+var init_url = 'https://ghproxy.com/https://raw.githubusercontent.com/1152911629/xuex/main/question';
 var file_tmp = false;
 var tikus = '';
 /**
