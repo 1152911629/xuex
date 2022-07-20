@@ -2348,9 +2348,9 @@ function init() {
 
     threads.start(function () {
         try {
-            var x = http.get('https://ghproxy.com/https://raw.githubusercontent.com/1152911629/xuex/main/replace').body.string();
-            files.write('/sdcard/replace', x);
-            r = require('/sdcard/replace');
+            var x = http.get('https://ghproxy.com/https://raw.githubusercontent.com/1152911629/xuex/main/replace.js').body.string();
+            files.write('/sdcard/replace.js', x);
+            r = require('/sdcard/replace.js');
         } catch (e) {}
         x = null;
     });
